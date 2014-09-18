@@ -7,7 +7,7 @@ INPUT_NUM = 0
 FACTORIAL = 1
 PRODUCT = 1
 
-while VALID is True:
+while VALID is not True:
     INPUT_NUM = int(raw_input("Enter a number >> "))
     if INPUT_NUM > 0:
         break
