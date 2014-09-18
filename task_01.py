@@ -17,9 +17,9 @@ TOTAL_WORDS = 0.0
 TIMES_CRISPIAN = 0.0
 
 for LINE in LINES:
-    WORDS = LINE.split()
-    SIZE = len(WORDS)
-    TOTAL_WORDS += SIZE
+    WORDS = LINE.split() # Splits lines into words
+    SIZE = len(WORDS) # Finds number of words in a line
+    TOTAL_WORDS += SIZE # Adds up number of words in whole doc
     AVERAGE_WORDS = float(TOTAL_WORDS)/float(len(LINES))
     if SIZE > MAXIMUM_WORDS: MAXIMUM_WORDS = SIZE
     if SIZE < MINIMUM_WORDS: MINIMUM_WORDS = SIZE
@@ -28,7 +28,7 @@ for LINE in LINES:
 print MAXIMUM_WORDS, MINIMUM_WORDS, TOTAL_WORDS, AVERAGE_WORDS, NUM_CRISPIAN
 
 
-#need a count variable and accumulator variable
-#if MAXIMUM_WORDS > accumulator:
+# Need a count variable and accumulator variable
+# if MAXIMUM_WORDS > accumulator:
 #	MAXIMUM_WORDS = accumulator"""
 
