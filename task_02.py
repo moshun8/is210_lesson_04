@@ -7,11 +7,11 @@ INPUT_NUM = 0
 FACTORIAL = 1
 PRODUCT = 1
 
-while VALID is False:
+while VALID is True:
     INPUT_NUM = int(raw_input("Enter a number >> "))
     if INPUT_NUM > 0:
         break
-    if INPUT_NUM < 0: 
+    if INPUT_NUM < 0:
         print "Invalid number: Please enter a number greater than zero."
         continue
 
