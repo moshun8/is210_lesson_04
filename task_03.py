@@ -11,7 +11,7 @@ NUM_GUESS = 3
 # reread instructions, everything should depend on Access
 while not ACCESS:
     GUESS = raw_input(
-    "What is your password ({0} attempts left)? ").format(NUM_GUESS)
+    "What is your password ({0} attempts left)? ".format(NUM_GUESS))
     print GUESS
     if GUESS == PASSWORD:
         print "Access granted!"
