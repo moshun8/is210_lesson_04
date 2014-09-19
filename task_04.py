@@ -13,9 +13,11 @@ MAXIMUM = 0
 for DAY in TRAN:  # break down list to elements/days
     DAILY_TOT = 0
     for INDIV_TRANS in DAY:  # break down into each number in list
-        DAILY_TOT += INDIV_TRANS
+        DAILY_TOT += INDIV_TRANS  # daily totals added up
     if DAILY_TOT < MINIMUM:  # too much indentation before
         MINIMUM = DAILY_TOT
     elif DAILY_TOT > MAXIMUM:
         MAXIMUM = DAILY_TOT
-TOTAL = DAILY_TOT
+    TOTAL += DAILY_TOT  # needs to be in the loop
+
+print TOTAL, MINIMUM, MAXIMUM
